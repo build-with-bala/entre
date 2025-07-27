@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useMemo } from 'react';
@@ -27,7 +28,7 @@ export default function QueryDetailPage() {
     if (!query || !currentUser) return;
     updateQuery(query.id, 'Resolved', `Resolved by ${currentUser.role} (${currentUser.name})`);
     toast({ title: "Query Resolved", description: `Query #${query.id} has been marked as resolved.` });
-    router.push('/');
+    router.push('/dashboard');
   };
 
   const handleForward = (role: Role) => {
@@ -35,7 +36,7 @@ export default function QueryDetailPage() {
     const assignedUser = users.find(u => u.role === role);
     updateQuery(query.id, 'In Progress', `Forwarded to ${role} by ${currentUser.role} (${currentUser.name})`, assignedUser?.id);
     toast({ title: "Query Forwarded", description: `Query #${query.id} has been forwarded to ${role}.` });
-    router.push('/');
+    router.push('/dashboard');
   };
 
   const handleEscalate = () => {
@@ -43,7 +44,7 @@ export default function QueryDetailPage() {
     const adminUser = users.find(u => u.role === 'Admin');
     updateQuery(query.id, 'Pending Admin', `Escalated to Admin by ${currentUser.role} (${currentUser.name})`, adminUser?.id);
     toast({ title: "Query Escalated", description: `Query #${query.id} has been escalated to Admin.` });
-    router.push('/');
+    router.push('/dashboard');
   };
 
   const canResolve = useMemo(() => {
@@ -82,7 +83,7 @@ export default function QueryDetailPage() {
     <main className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
       <div className="mb-4">
         <Button variant="outline" asChild>
-          <Link href="/">
+          <Link href="/dashboard">
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back to Dashboard
           </Link>

@@ -46,7 +46,7 @@ export default function LoginPage() {
       setIsLoading(false);
       if (success) {
         toast({ title: 'Login Successful', description: 'Welcome back!' });
-        router.push('/');
+        router.push('/dashboard');
       } else {
         setError('Invalid user or password.');
         toast({
