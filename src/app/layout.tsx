@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { AppProvider } from '@/context/AppContext';
 import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/layout/Header';
+import ChatBot from '@/components/ChatBot';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -26,6 +27,7 @@ export default function RootLayout({
           <div className="flex min-h-screen w-full flex-col bg-background">
             <Header />
             {children}
+            <ChatBot />
           </div>
           <Toaster />
         </AppProvider>
