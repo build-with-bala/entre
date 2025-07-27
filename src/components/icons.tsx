@@ -14,9 +14,17 @@ export const Icons = {
       strokeLinejoin="round"
       {...props}
     >
-      <path d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5a2 2 0 0 0 2 2h1" />
-      <path d="M16 21h1a2 2 0 0 0 2-2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1" />
-      <path d="M12 3v18" />
+      <path d="M12 2a10 10 0 0 0-3.92 19.4" />
+      <path d="M12.08 22A10 10 0 0 0 22 13.92" />
+      <path d="M4 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
+      <path d="M14 4a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
+      <path d="M22 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
+      <path d="M4 12h5" />
+      <path d="M14 2v5" />
+      <path d="m19 12-3-3" />
+      <path d="m5 14-1 3" />
+      <path d="m14 7-1 3" />
+      <path d="M19 16-1 3" />
     </svg>
   ),
 };

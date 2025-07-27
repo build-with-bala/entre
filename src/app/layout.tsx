@@ -5,7 +5,7 @@ import Header from '@/components/layout/Header';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'CampusConnect',
+  title: 'CampusGraph',
   description: 'A campus query resolution system',
 };
 

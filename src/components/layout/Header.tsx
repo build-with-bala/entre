@@ -24,7 +24,7 @@ export default function Header() {
           <Link href="/" className="flex items-center space-x-2">
             <Icons.logo className="h-6 w-6" />
             <span className="font-bold sm:inline-block font-headline text-lg">
-              CampusConnect
+              CampusGraph
             </span>
           </Link>
         </div>
