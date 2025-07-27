@@ -9,9 +9,9 @@ export const queries: Query[] = [
     createdBy: 1,
     status: "Resolved",
     resolutionTrail: [
-      { step: 1, handledBy: { role: "Student", name: "Alice" }, action: "Submitted query", timestamp: "2025-07-20T09:30:00Z" },
-      { step: 2, handledBy: { role: "CR", name: "Bob" }, action: "Received issue from Alice and forwarded to IT Club", timestamp: "2025-07-20T10:00:00Z" },
-      { step: 3, handledBy: { role: "ITClub", name: "David" }, action: "Resolved the projector issue by replacing the cable.", timestamp: "2025-07-20T12:30:00Z" }
+      { step: 1, handledBy: { role: "Student", name: "Anusha" }, action: "Submitted query", timestamp: "2025-07-20T09:30:00Z" },
+      { step: 2, handledBy: { role: "CR", name: "Gokul" }, action: "Received issue from Anusha and forwarded to IT Club", timestamp: "2025-07-20T10:00:00Z" },
+      { step: 3, handledBy: { role: "ITClub", name: "Dinesh" }, action: "Resolved the projector issue by replacing the cable.", timestamp: "2025-07-20T12:30:00Z" }
     ]
   },
   {
@@ -23,8 +23,8 @@ export const queries: Query[] = [
     status: "Pending Admin",
     resolutionTrail: [
       { step: 1, handledBy: { role: "Student", name: "Priya" }, action: "Submitted query", timestamp: "2025-07-21T11:00:00Z" },
-      { step: 2, handledBy: { role: "CR", name: "Bob" }, action: "Forwarded to Media Club", timestamp: "2025-07-22T09:00:00Z" },
-      { step: 3, handledBy: { role: "MediaClub", name: "Charlie" }, action: "Budget approval required, escalated to Admin.", timestamp: "2025-07-22T10:00:00Z" }
+      { step: 2, handledBy: { role: "CR", name: "Gokul" }, action: "Forwarded to Media Club", timestamp: "2025-07-22T09:00:00Z" },
+      { step: 3, handledBy: { role: "MediaClub", name: "Suresh" }, action: "Budget approval required, escalated to Admin.", timestamp: "2025-07-22T10:00:00Z" }
     ]
   },
   {
@@ -35,8 +35,8 @@ export const queries: Query[] = [
     createdBy: 7,
     status: "In Progress",
     resolutionTrail: [
-      { step: 1, handledBy: { role: "Student", name: "Anusha" }, action: "Submitted query", timestamp: "2025-07-23T14:00:00Z" },
-      { step: 2, handledBy: { role: "CR", name: "Gokul" }, action: "Forwarded to IT Club", timestamp: "2025-07-23T14:30:00Z" }
+      { step: 1, handledBy: { role: "Student", name: "Ravi" }, action: "Submitted query", timestamp: "2025-07-23T14:00:00Z" },
+      { step: 2, handledBy: { role: "CR", name: "Rahul" }, action: "Forwarded to IT Club", timestamp: "2025-07-23T14:30:00Z" }
     ]
   },
   {
@@ -48,7 +48,7 @@ export const queries: Query[] = [
     status: "Resolved",
     resolutionTrail: [
        { step: 1, handledBy: { role: "Student", name: "Shashant" }, action: "Submitted query", timestamp: "2025-07-24T10:00:00Z" },
-       { step: 2, handledBy: { role: "CR", name: "Gokul" }, action: "Responded with the date from the academic handbook.", timestamp: "2025-07-24T10:15:00Z" }
+       { step: 2, handledBy: { role: "CR", name: "Rahul" }, action: "Responded with the date from the academic handbook.", timestamp: "2025-07-24T10:15:00Z" }
     ]
   }
 ];

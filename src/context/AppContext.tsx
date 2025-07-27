@@ -14,6 +14,9 @@ interface AppContextType {
   roles: Role[];
   addQuery: (data: { title: string; description: string; category: "IT" | "Media" | "Academic" | "General"; }) => void;
   updateQuery: (queryId: number, status: Query['status'], action: string, assignedToUserId?: number) => void;
+  login: (userId: number, pass: string) => boolean;
+  logout: () => void;
+  authChecked: boolean;
 }
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
@@ -22,6 +25,36 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [currentUser, setCurrentUser] = useState<User | null>(null);
   const [users, setUsers] = useState<User[]>(initialUsers);
   const [queries, setQueries] = useState<Query[]>(initialQueries);
+  const [authChecked, setAuthChecked] = useState(false);
+
+  useEffect(() => {
+    const storedUserId = localStorage.getItem('currentUser');
+    if (storedUserId) {
+      const user = users.find(u => u.id === parseInt(storedUserId, 10));
+      if (user) {
+        setCurrentUser(user);
+      }
+    }
+    setAuthChecked(true);
+  }, [users]);
+
+
+  const login = (userId: number, pass: string): boolean => {
+    if (pass === 'XXX') {
+      const user = users.find(u => u.id === userId);
+      if (user) {
+        setCurrentUser(user);
+        localStorage.setItem('currentUser', user.id.toString());
+        return true;
+      }
+    }
+    return false;
+  };
+
+  const logout = () => {
+    setCurrentUser(null);
+    localStorage.removeItem('currentUser');
+  };
 
   const addQuery = (data: { title: string; description: string; category: "IT" | "Media" | "Academic" | "General" }) => {
     if (!currentUser) return;
@@ -88,7 +121,10 @@ export function AppProvider({ children }: { children: ReactNode }) {
     queries,
     roles,
     addQuery,
-    updateQuery
+    updateQuery,
+    login,
+    logout,
+    authChecked
   };
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
