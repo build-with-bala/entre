@@ -25,8 +25,8 @@ export default function ChatBot() {
   const scrollAreaRef = useRef<HTMLDivElement>(null);
 
   const predefinedQueries = [
-    "How do I reset my password?",
-    "When is the library open?",
+    "What is the admission process?",
+    "What are the hostel facilities like?",
     "How can I book a study room?",
     "What's the Wi-Fi password?",
   ];
@@ -59,7 +59,9 @@ export default function ChatBot() {
     }
   };
   
-  if (!currentUser) return null;
+  if (!currentUser) {
+    return null;
+  }
 
   return (
     <>
