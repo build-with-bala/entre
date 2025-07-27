@@ -22,7 +22,7 @@ export default function Header() {
       <div className="container flex h-16 items-center">
         <div className="mr-4 flex">
           <Link href="/" className="flex items-center space-x-2">
-            <Icons.logo className="h-6 w-6" />
+            <Icons.logo width={24} height={24} />
             <span className="font-bold sm:inline-block font-headline text-lg">
               CampusGraph
             </span>

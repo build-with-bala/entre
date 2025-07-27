@@ -63,7 +63,7 @@ export default function LoginPage() {
       <Card className="w-full max-w-md shadow-2xl">
         <CardHeader className="text-center">
           <div className="mx-auto mb-4 flex items-center justify-center rounded-full bg-primary/10 p-4 w-24 h-24">
-              <Icons.logo className="h-16 w-16 text-primary" />
+              <Icons.logo width={64} height={64} style={{ filter: ''}} />
           </div>
           <CardTitle className="text-3xl font-headline">Welcome to CampusGraph</CardTitle>
           <CardDescription>Please sign in to continue</CardDescription>

@@ -17,7 +17,7 @@ export default function HomePage() {
       <section className="relative flex flex-col items-center justify-center text-center py-20 lg:py-32 bg-background">
         <div className="absolute inset-0 bg-primary/10 -skew-y-3"></div>
         <div className="relative z-10 container mx-auto px-4">
-          <Icons.logo className="h-24 w-24 mx-auto mb-6 text-primary" />
+          <Icons.logo width={96} height={96} style={{ filter: ''}} className="mx-auto mb-6" />
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-foreground font-headline">
             Welcome to CampusGraph
           </h1>
