@@ -1,8 +1,8 @@
+
 "use client";
 
 import Link from 'next/link';
 import { useApp } from '@/context/AppContext';
-import RoleSwitcher from '@/components/RoleSwitcher';
 import { Icons } from '@/components/icons';
 import { Button } from '@/components/ui/button';
 import { LogOut } from 'lucide-react';
@@ -38,7 +38,6 @@ export default function Header() {
               </Button>
             </>
           )}
-          {!currentUser && <RoleSwitcher />}
         </div>
       </div>
     </header>
