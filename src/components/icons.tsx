@@ -9,22 +9,19 @@ export const Icons = {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
       {...props}
     >
-      <path d="M12 2a10 10 0 0 0-3.92 19.4" />
-      <path d="M12.08 22A10 10 0 0 0 22 13.92" />
-      <path d="M4 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
-      <path d="M14 4a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
-      <path d="M22 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
-      <path d="M4 12h5" />
-      <path d="M14 2v5" />
-      <path d="m19 12-3-3" />
-      <path d="m5 14-1 3" />
-      <path d="m14 7-1 3" />
-      <path d="M19 16-1 3" />
+      <path d="M8 19.5c1.5-1 2.5-3 2.5-5s-1-4-2.5-5" />
+      <path d="M4.5 19.5c-1.5-1-2.5-3-2.5-5s1-4 2.5-5" />
+      <path d="M12.5 19.5c1.5-1 2.5-3 2.5-5s-1-4-2.5-5" />
+      <path d="M12.5 4.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+      <path d="M12.5 24.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+      <path d="M20 14.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+      <path d="M12.5 22v-15" />
+      <path d="M12.5 7a7.5 7.5 0 0 1 7.5 7.5" />
     </svg>
   ),
 };
