@@ -6,8 +6,8 @@ import ChatBot from '@/components/ChatBot';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'CampusGraph',
-  description: 'A campus query resolution system',
+  title: 'ASkify',
+  description: 'got questions? we got answers!',
 };
 
 export default function RootLayout({

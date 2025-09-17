@@ -19,7 +19,7 @@ export default function HomePage() {
         <div className="relative z-10 container mx-auto px-4">
           <Icons.logo width={96} height={96} style={{ filter: ''}} className="mx-auto mb-6" />
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-foreground font-headline">
-            Welcome to CampusGraph
+            Welcome to Askify
           </h1>
           <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-muted-foreground">
             The streamlined solution for resolving student queries on campus. Connect, communicate, and resolve issues efficiently.
@@ -38,7 +38,7 @@ export default function HomePage() {
       {/* Features Section */}
       <section className="py-16 lg:py-24 bg-background">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center font-headline">Why CampusGraph?</h2>
+          <h2 className="text-3xl font-bold text-center font-headline">Why Askify?</h2>
           <p className="text-muted-foreground text-center mt-2 mb-12">
             A centralized platform for transparent and efficient query resolution.
           </p>
@@ -83,7 +83,7 @@ export default function HomePage() {
       {/* Footer */}
        <footer className="bg-muted text-muted-foreground py-6">
           <div className="container mx-auto px-4 text-center">
-              <p>&copy; {new Date().getFullYear()} CampusGraph. All rights reserved.</p>
+              <p>&copy; {new Date().getFullYear()} Askify. All rights reserved.</p>
           </div>
       </footer>
     </main>

@@ -4,8 +4,8 @@ import type { SVGProps } from "react";
 export const Icons = {
   logo: (props: Omit<React.ComponentProps<typeof Image>, 'src' | 'alt'>) => (
     <Image 
-      src="/logo.png" 
-      alt="CampusGraph Logo"
+      src="/logo1.png" 
+      alt="Askify Logo"
       width={24}
       height={24}
       {...props} 
