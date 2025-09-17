@@ -65,7 +65,7 @@ export default function LoginPage() {
           <div className="mx-auto mb-4 flex items-center justify-center rounded-full bg-primary/10 p-4 w-24 h-24">
               <Icons.logo width={64} height={64} style={{ filter: ''}} />
           </div>
-          <CardTitle className="text-3xl font-headline">Welcome to CampusGraph</CardTitle>
+          <CardTitle className="text-3xl font-headline">Welcome to Askify</CardTitle>
           <CardDescription>Please sign in to continue</CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">

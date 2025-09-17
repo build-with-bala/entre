@@ -24,7 +24,7 @@ export default function Header() {
           <Link href="/" className="flex items-center space-x-2">
             <Icons.logo width={24} height={24} />
             <span className="font-bold sm:inline-block font-headline text-lg">
-              CampusGraph
+              Askify
             </span>
           </Link>
         </div>
